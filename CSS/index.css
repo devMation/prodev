@@ -20,6 +20,53 @@ body {
     min-height: 100vh;
     font-family: Arial, "Helvetica Neue";
     background: url(../PICTURES/fond.jpg) center/cover fixed;
+    cursor: none;
+    overflow-x: hidden;
+}
+
+.mouse {
+    position: absolute;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+
+}
+
+#cursor {
+    background-color: rgb(219, 218, 218);
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    /* transition: 0.1s; */
+
+
+}
+
+#cercle2 {
+    background-color: rgba(235, 11, 11, 0.662);
+    width: 70px;
+    height: 70px;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease;
+    border: 2px solid rgb(0, 0, 0);
+
+
+}
+
+a {
+
+    z-index: 1000;
+    position: relative;
+}
+
+#cercle3 {
+    background-color: rgba(0, 30, 255, 0.825);
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    border: 3px solid black;
+
 }
 
 header {
@@ -73,6 +120,7 @@ nav a {
     font-weight: bold;
     color: var(--color);
     text-shadow: 4px 1px 9px var(--color);
+
 
 }
 
